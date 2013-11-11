@@ -1,0 +1,33 @@
+zlib:
+sudo apt-get install zlib1g-dev 
+Installing Velvet
+Laatste versie halen van de volgende site
+http://www.ebi.ac.uk/~zerbino/velvet/
+cd Downloads/
+
+uitpakken velvet
+sudo tar xvzf velvet_1.2.10.tgz
+cd velvet_1.2.10/ 
+laatste versie installeren
+./update_velvet.sh
+
+./velveth  → geeft permission denied dus eerst rechten veranderen
+chmod +x velveth 
+
+./velvetg --> geeft permission denied dus eerst rechten veranderen
+chmod +x velvethg
+
+velvetg gebruiken deze output geeft de waarde die men wilt hebben
+
+na proberen te runnen segmentation fault
+opgelost met sudo make 'BUNDLEDZLIB=1' 
+
+daarna eerst velveth gebruiken om roadmap aan te maken die gebruikt kan worden voor velvetg
+
+./velveth ~/Documents/School/BPSDA 31 -longPaired -fastq -separate ~/Documents/School/BPSDA/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq ~/Documents/School/BPSDA/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq
+
+
+runnen velvetg
+ ./velvetg ~/Documents/School/BPSDA
+ 
+Kon geen rapport genereren wegens gebrek aan computer kracht
