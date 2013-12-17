@@ -30,4 +30,49 @@ daarna eerst velveth gebruiken om roadmap aan te maken die gebruikt kan worden v
 runnen velvetg
  ./velvetg ~/Documents/School/BPSDA
  
-Kon geen rapport genereren wegens gebrek aan computer kracht
+Velvet log:
+
+Mon Nov 11 10:38:45 2013
+ ./velveth /home/assembly/velvet_1.2.10 31 -longPaired -fastq -separate /home/assembly/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz
+Version 1.2.09
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Mon Nov 11 10:39:18 2013
+ ./velveth /home/assembly/velvet_1.2.10 31 -longPaired -fastq -separate /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz
+Version 1.2.09
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Mon Nov 11 17:41:57 2013
+ ./velvetg /home/assembly/velvet_1.2.10 -exp_cov auto -ins_length 100
+Version 1.2.09
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Median coverage depth = 0.000000
+Final graph has 10942126 nodes and n50 of 108, max 8955, total 404967397, using 20896030/31187276 reads
+
+Wed Nov 20 14:11:13 2013
+ ./velvetg /home/assembly/velvet_1.2.10/ -amos_file yes
+Version 1.2.09
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 10942126 nodes and n50 of 108, max 8955, total 404967397, using 20896030/31187276 reads
