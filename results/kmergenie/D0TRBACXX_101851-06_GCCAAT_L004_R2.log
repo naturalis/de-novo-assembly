@@ -1,0 +1,15 @@
+running histogram estimation
+Linear estimation: ~5182 M distinct 56-mers are in the reads
+K-mer sampling: 1/988
+going to estimate histograms for values of k: 91 81 71 61 51 41 31 21 
+fitting model to histograms to estimate best k
+estimation of the best k so far: 41
+refining estimation around [35; 47], with a step of 2
+running histogram estimation
+Linear estimation: ~7604 M distinct 34-mers are in the reads
+K-mer sampling: 1/1450
+going to estimate histograms for values of k: 47 45 43 41 39 37 35 
+fitting model to histograms to estimate best k
+table of predicted num. of genomic k-mers: /home/assembly/de-novo-assembly/results/kmergenie/D0TRBACXX_101851-06_GCCAAT_L004_R2/histograms.dat
+recommended coverage cut-off for best k: 26
+best k: 35
