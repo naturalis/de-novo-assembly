@@ -28,6 +28,7 @@ done
 cd -
 
 # commit the results (which are small-ish) to github
-git add $RESULTS/kmergenie
+git pull
+git add $RESULTS
 git commit -m "adding kmergenie results"
 git push
