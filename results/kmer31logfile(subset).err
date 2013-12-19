@@ -1,0 +1,471 @@
+
+Version 2.04: released on July 13th, 2012
+Compile Jul  9 2013	11:57:16
+
+********************
+Pregraph
+********************
+
+Parameters: pregraph -s configsoap.config -K 31 -R -o stef 
+
+In configsoap.config, 2 lib(s), maximum read length 100, maximum name length 256.
+
+8 thread(s) initialized.
+Import reads from file:
+ C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz
+Import reads from file:
+ C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz
+Time spent on hashing reads: 366s, 31187276 read(s) processed.
+LIB(s) information:
+ [LIB] 0, avg_ins 200, reverse 0.
+ [LIB] 1, avg_ins 2000, reverse 1.
+689866974 node(s) allocated, 2183109320 kmer(s) in reads, 2183109320 kmer(s) processed.
+done hashing nodes
+664217911 linear node(s) marked.
+Time spent on marking linear nodes: 15s.
+Time spent on pre-graph construction: 381s.
+
+Start to remove frequency-one-kmer tips shorter than 62.
+Total 8433226 tip(s) removed.
+8 thread(s) initialized.
+3278100 linear node(s) marked.
+Start to remove tips with minority links.
+1135681 tip(s) removed in cycle 1.
+7338 tip(s) removed in cycle 2.
+105 tip(s) removed in cycle 3.
+1 tip(s) removed in cycle 4.
+0 tip(s) removed in cycle 5.
+Total 1143125 tip(s) removed.
+8 thread(s) initialized.
+0 linear node(s) marked.
+Time spent on removing tips: 693s.
+
+--- 10000000 edge(s) built.
+39646020 (19824645) edge(s) and 4094047 extra node(s) constructed.
+Time spent on constructing edges: 628s.
+
+In file: configsoap.config, max seq len 100, max name len 256.
+8 thread(s) initialized.
+Import reads from file:
+ C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz
+Import reads from file:
+ C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz
+31187276 read(s) processed.
+Time spent on:
+ importing reads: 46s,
+ chopping reads to kmers: 34s,
+ searching kmers: 148s,
+ aligning reads to edges: 38s,
+ searching (K+1)mers: 21s,
+ adding pre-arcs: 35s,
+ recording read paths: 18s.
+532842454 marker(s) output.
+Reads alignment done, 2162807 read(s) deleted, 36904786 pre-arc(s) added.
+LIB(s) information:
+ [LIB] 0, avg_ins 200, reverse 0.
+ [LIB] 1, avg_ins 2000, reverse 1.
+Time spent on aligning reads: 380s.
+
+15170789 vertex(es) output.
+Overall time spent on constructing pre-graph: 34m.
+
+
+********************
+Contig
+********************
+
+Parameters: contig -g stef -M 1 -R -s configsoap.config 
+
+There are 15170789 kmer(s) in vertex file.
+There are 39646020 edge(s) in edge file.
+Kmers sorted.
+39646020 edge(s) input.
+48016556 pre-arcs loaded.
+461697924 markers overall.
+461697924 markers loaded.
+9911473 none-palindrome edge(s) swapped, 0 palindrome edge(s) processed.
+39646020 edge(s) sorted.
+Arcs sorted.
+549713 repeat(s) are solvable, 1100024 more edge(s).
+2200048 dead arc(s) removed.
+Time spent on solving repeat: 8s.
+Start to pinch bubbles, cutoff 0.100000, MAX NODE NUM 3, MAX DIFF NUM 2.
+.............100000 bubbles merged.
+.............200000 bubbles merged.
+.............300000 bubbles merged.
+2390475 start points, 31940852 dheap nodes.
+9703179 pair(s) found, 414045 pair of path(s) compared, 314522 pair(s) merged.
+Sequence comparison failed:
+ Path crossing deleted edge                         0
+ Length difference of two paths greater than two    34051
+ Mismatch score greater than cutoff (2)             31808
+ Mismatch score ratio greater than cutoff (0.1)     0
+ Path length shorter than (Kmer-1)                  33664
+DFibHeap: 3335080 node(s) allocated.
+3404390 edge(s) concatenated in cycle 1.
+101177 edge(s) concatenated in cycle 2.
+81 edge(s) concatenated in cycle 3.
+0 edge(s) concatenated in cycle 4.
+Time spent on pinching bubbles: 160s.
+Start to destroy weak inner edges.
+1613779 weak inner edge(s) destroyed in cycle 1.
+26394 weak inner edge(s) destroyed in cycle 2.
+224 weak inner edge(s) destroyed in cycle 3.
+2 weak inner edge(s) destroyed in cycle 4.
+0 weak inner edge(s) destroyed in cycle 5.
+3216404 dead arc(s) removed.
+844887 inner edge(s) with coverage lower than or equal to 1 destroyed.
+1739147 dead arc(s) removed.
+2690522 edge(s) concatenated in cycle 1.
+37493 edge(s) concatenated in cycle 2.
+14 edge(s) concatenated in cycle 3.
+0 edge(s) concatenated in cycle 4.
+Before compacting, 40746044 edge(s) existed.
+After compacting, 22671314 edge(s) left.
+
+Strict: 0, cutoff length: 62.
+1544442 tips cut in cycle 1.
+121991 tips cut in cycle 2.
+28016 tips cut in cycle 3.
+11739 tips cut in cycle 4.
+6322 tips cut in cycle 5.
+4085 tips cut in cycle 6.
+2855 tips cut in cycle 7.
+2006 tips cut in cycle 8.
+1506 tips cut in cycle 9.
+1205 tips cut in cycle 10.
+1063 tips cut in cycle 11.
+768 tips cut in cycle 12.
+538 tips cut in cycle 13.
+328 tips cut in cycle 14.
+145 tips cut in cycle 15.
+100 tips cut in cycle 16.
+63 tips cut in cycle 17.
+41 tips cut in cycle 18.
+20 tips cut in cycle 19.
+9 tips cut in cycle 20.
+4 tips cut in cycle 21.
+4 tips cut in cycle 22.
+1 tips cut in cycle 23.
+1 tips cut in cycle 24.
+0 tips cut in cycle 25.
+1227104 dead arc(s) removed.
+782480 edge(s) concatenated in cycle 1.
+3013 edge(s) concatenated in cycle 2.
+0 edge(s) concatenated in cycle 3.
+Before compacting, 22671314 edge(s) existed.
+After compacting, 17645824 edge(s) left.
+
+There are 2539654 contig(s) longer than 100, sum up 400955386 bp, with average length 157.
+The longest length is 20743 bp, contig N50 is 158 bp,contig N90 is 100 bp.
+8824311 contig(s) longer than 32 output.
+
+Time spent on constructing contig: 12m.
+
+
+********************
+Map
+********************
+
+Parameters: map -s configsoap.config -g stef -K 31 
+
+Kmer size: 31.
+Contig length cutoff: 33.
+
+8824311 contig(s), maximum sequence length 20743, minimum sequence length 32, maximum name length 10.
+Time spent on parsing contigs file: 3s.
+8 thread(s) initialized.
+Time spent on hashing contigs: 84s.
+407602574 node(s) allocated, 416722435 kmer(s) in contigs, 416722435 kmer(s) processed.
+Time spent on graph construction: 88s.
+
+Time spent on aligning long reads: 0s.
+
+In file: configsoap.config, max seq len 100, max name len 256
+8 thread(s) initialized.
+17645824 edge(s) in the graph.
+Import reads from file:
+ C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz
+Import reads from file:
+ C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz
+Current insert size is 200, map_len is 32.
+Import reads from file:
+ C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz
+Import reads from file:
+ C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz
+Current insert size is 2000, map_len is 35.
+
+Total reads         62374552
+Reads in gaps       26017898
+Ratio               41.7%
+Reads on contigs    46709034
+Ratio               74.9%
+2 pe insert size, the largest boundary is 62374552.
+
+LIB(s) information:
+ [LIB] 0, avg_ins 200, reverse 0.
+ [LIB] 1, avg_ins 2000, reverse 1.
+Time spent on aligning reads: 833s.
+
+Overall time spent on alignment: 15m.
+
+
+********************
+Scaff
+********************
+
+Parameters: scaff -g stef -V 
+
+Files for scaffold construction are OK.
+
+There are 2 grad(s), 62374552 read(s), max read len 100.
+Kmer size: 31
+There are 17645824 edge(s) in edge file.
+Mask contigs with coverage lower than 0.3 or higher than 6.0, and strict length 100.
+Average contig coverage is 3, 8396215 contig(s) masked.
+Mask contigs shorter than 33, 2929032 contig(s) masked.
+19245832 arc(s) loaded, average weight is 2.
+8824311 contig(s) loaded.
+Done loading updated edges.
+Time spent on loading updated edges: 56s.
+
+*****************************************************
+Start to load paired-end reads information.
+
+For insert size: 200
+ Total PE links                      12935925
+ Normal PE links on same contig      3142512
+ Incorrect oriented PE links         7867
+ PE links of too small insert size   1239508
+ PE links of too large insert size   0
+ Correct PE links                    8545605
+ Accumulated connections             11866366
+Use contigs longer than 200 to estimate insert size: 
+ PE links               2177875
+ Average insert size    227
+ SD                     46
+5933183 new connections.
+
+For insert size: 2000
+ Total PE links                      7039337
+ Normal PE links on same contig      939790
+ Incorrect oriented PE links         1996
+ PE links of too small insert size   11481
+ PE links of too large insert size   0
+ Correct PE links                    4263366
+ Accumulated connections             5115052
+Use contigs longer than 2000 to estimate insert size: 
+ PE links               42500
+ Average insert size    50
+ SD                     32
+2557526 new connections.
+
+All paired-end reads information loaded.
+Time spent on loading paired-end reads information: 132s.
+
+*****************************************************
+Start to construct scaffolds.
+
+***************************
+For insert size: 200
+ Total PE links                5933182
+ PE links to masked contigs    4365197
+ On same scaffold PE links     0
+Cutoff of PE links to make a reliable connection: 3
+ Active connections    3135970
+ Weak connections      2775242
+ Weak ratio            88.5%
+0 circles removed.
+Start to remove transitive connection.
+Total contigs                         17645824
+Masked contigs                        11325247
+Remained contigs                      6320577
+None-outgoing-connection contigs      5960703 (94.306305%)
+Single-outgoing-connection contigs    359019
+Multi-outgoing-connection contigs     4
+Cycle 1
+ Two-outgoing-connection contigs     851
+ Potential transitive connections    152
+ Transitive connections              150
+ Transitive ratio                    17.6%
+Cycle 2
+ Two-outgoing-connection contigs     700
+ Potential transitive connections    2
+ Transitive connections              0
+ Transitive ratio                    0.0%
+Start to linearize sub-graph.
+ Picked sub-graphs          703
+ Connection-conflict        0
+ Significant overlapping    550
+ Eligible                   0
+ Bubble structures          4
+Mask repeats:
+ Puzzles           547
+ Masked contigs    547
+Start to remove transitive connection.
+Total contigs                         17645824
+Masked contigs                        11326349
+Remained contigs                      6319475
+None-outgoing-connection contigs      5961055 (94.328323%)
+Single-outgoing-connection contigs    358420
+Multi-outgoing-connection contigs     0
+Cycle 1
+ Two-outgoing-connection contigs     0
+ Potential transitive connections    0
+ Transitive connections              0
+Start to linearize sub-graph.
+ Picked sub-graphs          0
+ Connection-conflict        0
+ Significant overlapping    0
+ Eligible                   0
+ Bubble structures          0
+Start to mask puzzles.
+ Masked contigs      0
+ Remained puzzles    0
+Freezing done.
+
+Rank 1
+ Scaffold number                  161248
+ In-scaffold contig number        2539360
+ Total scaffold length            56030954
+ Average scaffold length          347
+ Filled gap number                3531
+ Longest scaffold                 20712
+ Scaffold and singleton number    2401130
+ Scaffold and singleton length    332809159
+ Average length                   138
+ N50                              181
+ N90                              69
+
+Report from smallScaf: 168384 scaffolds by smallPE.
+***************************
+For insert size: 2000
+ Total PE links                2557526
+ PE links to masked contigs    951381
+ On same scaffold PE links     28
+Cutoff of PE links to make a reliable connection: 5
+Report from checkScaf: 0 scaffold segments broken.
+Add large insert size PE links: 20278 orientation-conflict links, 4 contigs acrossed by normal links.
+ Active connections    3164752
+ Weak connections      3411078
+ Weak ratio            107.8%
+11503 circles removed.
+Start to remove transitive connection.
+Total contigs                         17645824
+Masked contigs                        11344857
+Remained contigs                      6300967
+None-outgoing-connection contigs      6207717 (98.520073%)
+Single-outgoing-connection contigs    92984
+Multi-outgoing-connection contigs     0
+Cycle 1
+ Two-outgoing-connection contigs     266
+ Potential transitive connections    151
+ Transitive connections              139
+ Transitive ratio                    52.3%
+Cycle 2
+ Two-outgoing-connection contigs     127
+ Potential transitive connections    12
+ Transitive connections              0
+ Transitive ratio                    0.0%
+Start to linearize sub-graph.
+ Picked sub-graphs          121
+ Connection-conflict        0
+ Significant overlapping    25
+ Eligible                   0
+ Bubble structures          0
+Mask repeats:
+ Puzzles           24
+ Masked contigs    24
+Start to remove transitive connection.
+Total contigs                         17645824
+Masked contigs                        11344905
+Remained contigs                      6300919
+None-outgoing-connection contigs      6207564 (98.518387%)
+Single-outgoing-connection contigs    93355
+Multi-outgoing-connection contigs     0
+Cycle 1
+ Two-outgoing-connection contigs     0
+ Potential transitive connections    0
+ Transitive connections              0
+Start to linearize sub-graph.
+ Picked sub-graphs          0
+ Connection-conflict        0
+ Significant overlapping    0
+ Eligible                   0
+ Bubble structures          0
+Non-strict linearization.
+Start to linearize sub-graph.
+ Picked sub-graphs          0
+ Connection-conflict        0
+ Significant overlapping    0
+ Eligible                   0
+ Bubble structures          0
+Start to mask puzzles.
+ Masked contigs      0
+ Remained puzzles    0
+Freezing done.
+
+Recover contigs.
+ Total recovered contigs    0
+ Single-route cases         0
+ Multi-route cases          0
+
+All links loaded.
+Time spent on constructing scaffolds: 35s.
+
+The final rank
+
+*******************************
+ Scaffold number                  34934
+ In-scaffold contig number        2539360
+ Total scaffold length            53100178
+ Average scaffold length          1520
+ Filled gap number                983
+ Longest scaffold                 20712
+ Scaffold and singleton number    2497222
+ Scaffold and singleton length    360333502
+ Average length                   144
+ N50                              174
+ N90                              69
+ Weak points                      0
+
+*******************************
+1000 scaffolds processed.
+2000 scaffolds processed.
+3000 scaffolds processed.
+4000 scaffolds processed.
+5000 scaffolds processed.
+6000 scaffolds processed.
+7000 scaffolds processed.
+8000 scaffolds processed.
+9000 scaffolds processed.
+10000 scaffolds processed.
+11000 scaffolds processed.
+12000 scaffolds processed.
+13000 scaffolds processed.
+14000 scaffolds processed.
+15000 scaffolds processed.
+16000 scaffolds processed.
+17000 scaffolds processed.
+18000 scaffolds processed.
+19000 scaffolds processed.
+20000 scaffolds processed.
+21000 scaffolds processed.
+22000 scaffolds processed.
+23000 scaffolds processed.
+24000 scaffolds processed.
+25000 scaffolds processed.
+26000 scaffolds processed.
+27000 scaffolds processed.
+28000 scaffolds processed.
+29000 scaffolds processed.
+30000 scaffolds processed.
+31000 scaffolds processed.
+32000 scaffolds processed.
+33000 scaffolds processed.
+34000 scaffolds processed.
+
+Done with 34934 scaffolds, 0 gaps finished, 46449 gaps overall.
+
+Overall time spent on constructing scaffolds: 56m.
+Time for the whole pipeline: 119m.
