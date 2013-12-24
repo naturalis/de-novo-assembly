@@ -39,11 +39,15 @@ ERR=$RESULTS/$SPECIES.err
 # stem of the contigs
 NAME=$RESULTS/$SPECIES
 
+# minimum number of pairs to join contigs,
+# set to same as SOAPdenovo
+N=3
+
 # grow the list of paired ends
 PAIRLIST=""
 for PAIR in $PAIRS; do
         PAIRLIST="$PAIRLIST $PAIR='${!PAIR}'"
 done
 
-/usr/bin/time --verbose abyss-pe k=$K lib="$PAIRS" $PAIRLIST name=$NAME > $LOG 2> $ERR
+/usr/bin/time --verbose abyss-pe k=$K n=$N lib="$PAIRS" $PAIRLIST name=$NAME > $LOG 2> $ERR
 
