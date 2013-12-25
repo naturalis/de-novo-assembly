@@ -37,24 +37,20 @@ READTYPE="-longPaired"
 # the type of the data input, which for us is fastq format
 FORMAT="-fastq.gz"
 
-# separate input files XXX is this needed?
-S="-separate"
-
 # minimum contig length
 MINLENGTH=100
 
 # same as SOAPdenovo
 INSERTSIZE=200
 
-# XXX not sure whether and  how multiple pairs of files can 
-# be provided. Maybe -separate pair1-1 pair1-2 -separate pair2-1 pair2-2
+# http://thegenomefactory.blogspot.se/2012/09/using-velvet-with-mate-pair-sequences.html
 INFILES=""
 for PAIR in $PAIRS; do
-        INFILES="$INFILES $S ${!PAIR} "        
+        INFILES="$INFILES $READTYPE -separate $FORMAT ${!PAIR} "        
 done
 
 # see http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf
-/usr/bin/time --verbose velveth $OUT $K $READTYPE $FORMAT $INFILES > $OUT 2> $ERR
-/usr/bin/time --verbose velvetg $OUT -ins_length $INSERTSIZE -min_contig_lgth $MINLENGTH -cov_cutoff auto >> $OUT 2>> $ERR
+/usr/bin/time --verbose velveth $OUT $K $INFILES > $LOG 2> $ERR
+/usr/bin/time --verbose velvetg $OUT -ins_length $INSERTSIZE -min_contig_lgth $MINLENGTH -cov_cutoff auto >> $LOG 2>> $ERR
 
 
