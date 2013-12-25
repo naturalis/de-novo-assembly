@@ -4,11 +4,11 @@ SPECIES=$1
 
 # verify command line argument
 if [ "$SPECIES" == "Rhagoletis_cerasi" ]; then
-echo "going to assemble Rhagoletis cerasi"
+        echo "going to assemble Rhagoletis cerasi"
 elif [ "$SPECIES" == "Gonioctena_quinquepunctata" ]; then
-echo "going to assemble Gonioctena quinquepunctata"
+        echo "going to assemble Gonioctena quinquepunctata"
 else
-echo "Usage: $0 <Rhagoletis_cerasi or Gonioctena_quinquepunctata>"
+        echo "Usage: $0 <Rhagoletis_cerasi or Gonioctena_quinquepunctata>"
         exit
 fi
 
@@ -16,32 +16,50 @@ fi
 # to this location
 PROJECT=/home/assembly/de-novo-assembly
 
+# read environment variables, same as abyss
+source $PROJECT/conf/abyss/$SPECIES.sh
+
 # optimal k-mer size was reconstructed using kmergenie, see
 # kmergenie.sh and ../results/kmergenie/kmergenie_summary.ini
 K=23
 
-# make output dir
+# make output dir and log file names
 RESULTS=$PROJECT/results/velvet
+OUT=$RESULTS/$SPECIES
 mkdir -p $RESULTS
+mkdir -p $OUT
+LOG=$OUT.log
+ERR=$OUT.err
 
-# minimum number of pairs to join contigs,
-# set to same as SOAPdenovo
-N=3
+# the data is longPaired
+READTYPE="-longPaired"
 
-#longpaid because the data is longPaired
-LP="longPaired"
+# the type of the data input, which for us is fastq format
+FORMAT="-fastq"
 
-#The type of the data input
-#Which for us is fastq format
-T="-fastq"
-
-# To Separate the files
+# separate input files XXX is this needed?
 S="-separate"
 
-# zie 4.1 in http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf
-velveth /home/assembly/velvet_1.2.10 $K $LP $T $S /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz
+# minimum contig length
+MINLENGTH=100
 
-###### Is nog niet af!######
-# Er moet nog gekeken worden hoe meer dan 2 datasets ingelezen kunnen worden of dit gewoon toevoegen is of # # een aparte commando. Verder moet deze dan worden ingelezen in de terminal input. Ook moet velvetg nog #worden gerunned worden na dat velveth klaar is, met de parameters van dien.
+# same as SOAPdenovo
+INSERTSIZE=200
+
+# interdigitate the sequences
+INFILES=""
+for PAIR in $PAIRS; do
+        for FILE in ${!PAIR}; do
+                gunzip $FILE
+        done
+        UNZIPPED=`echo ${!PAIR} | sed -e 's/.gz//'`
+        INFILE=$DATA/$SPECIES-$PAIR.fastq
+        shuffleSequences_fastq.pl $UNZIPPED $INFILE
+        INFILES="$INFILES $INFILE"        
+done
+
+# zie 4.1 in http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf
+/usr/bin/time --verbose velveth $OUT $K $READTYPE $FORMAT $INFILES > $OUT 2> $ERR
+/usr/bin/time --verbose velvetg $OUT -ins_length $INSERTSIZE -min_contig_lgth $MINLENGTH -cov_cutoff auto >> $OUT 2>> $ERR
 
 
