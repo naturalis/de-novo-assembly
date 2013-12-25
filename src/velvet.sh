@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 #!/bin/bash
 # this script needs one command line argument: the species name
 SPECIES=$1
@@ -45,7 +38,8 @@ T="-fastq"
 # To Separate the files
 S="-separate"
 
-./velveth /home/assembly/velvet_1.2.10 $K $LP $T $S /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz
+# zie 4.1 in http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf
+velveth /home/assembly/velvet_1.2.10 $K $LP $T $S /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz
 
 ###### Is nog niet af!######
 # Er moet nog gekeken worden hoe meer dan 2 datasets ingelezen kunnen worden of dit gewoon toevoegen is of # # een aparte commando. Verder moet deze dan worden ingelezen in de terminal input. Ook moet velvetg nog #worden gerunned worden na dat velveth klaar is, met de parameters van dien.
