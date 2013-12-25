@@ -35,7 +35,7 @@ ERR=$OUT.err
 READTYPE="-longPaired"
 
 # the type of the data input, which for us is fastq format
-FORMAT="-fastq"
+FORMAT="-fastq.gz"
 
 # separate input files XXX is this needed?
 S="-separate"
@@ -46,19 +46,14 @@ MINLENGTH=100
 # same as SOAPdenovo
 INSERTSIZE=200
 
-# interdigitate the sequences
+# XXX not sure whether and  how multiple pairs of files can 
+# be provided. Maybe -separate pair1-1 pair1-2 -separate pair2-1 pair2-2
 INFILES=""
 for PAIR in $PAIRS; do
-        for FILE in ${!PAIR}; do
-                gunzip $FILE
-        done
-        UNZIPPED=`echo ${!PAIR} | sed -e 's/.gz//'`
-        INFILE=$DATA/$SPECIES-$PAIR.fastq
-        shuffleSequences_fastq.pl $UNZIPPED $INFILE
-        INFILES="$INFILES $INFILE"        
+        INFILES="$INFILES $S ${!PAIR} "        
 done
 
-# zie 4.1 in http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf
+# see http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf
 /usr/bin/time --verbose velveth $OUT $K $READTYPE $FORMAT $INFILES > $OUT 2> $ERR
 /usr/bin/time --verbose velvetg $OUT -ins_length $INSERTSIZE -min_contig_lgth $MINLENGTH -cov_cutoff auto >> $OUT 2>> $ERR
 
