@@ -1,0 +1,138 @@
+ABYSS -k23 -q3  --coverage-hist=coverage.hist -s /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-bubbles.fa  -o /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz 
+ABySS 1.3.6
+ABYSS -k23 -q3 --coverage-hist=coverage.hist -s /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-bubbles.fa -o /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz'...
+make: *** [/home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa] Interrupt
+ABYSS -k23 -q3  --coverage-hist=coverage.hist -s /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-bubbles.fa  -o /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz 
+ABySS 1.3.6
+ABYSS -k23 -q3 --coverage-hist=coverage.hist -s /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-bubbles.fa -o /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz'...
+make: *** [/home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa] Interrupt
+ABYSS -k23 -q3  --coverage-hist=coverage.hist -s /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-bubbles.fa  -o /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz 
+ABySS 1.3.6
+ABYSS -k23 -q3 --coverage-hist=coverage.hist -s /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-bubbles.fa -o /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz'...
+make: *** [/home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa] Interrupt
+ABYSS -k23 -q3  --coverage-hist=coverage.hist -s /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-bubbles.fa  -o /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz 
+ABySS 1.3.6
+ABYSS -k23 -q3 --coverage-hist=coverage.hist -s /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-bubbles.fa -o /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz': discarded 2196 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz': discarded 12 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz': discarded 219955 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz': discarded 3377 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz': discarded 2227 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz': discarded 4 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz': discarded 175864 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz': discarded 1283 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz': discarded 11828 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz': discarded 106 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz': discarded 616112 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz': discarded 3627 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz': discarded 2478 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz': discarded 7 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz': discarded 63830 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz': discarded 3205 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz': discarded 2502 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz': discarded 9 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz': discarded 57200 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz': discarded 1224 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz': discarded 13208 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz': discarded 100 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz': discarded 430500 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz': discarded 4084 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz': discarded 5302 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz': discarded 5 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz': discarded 116284 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz': discarded 6877 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz': discarded 5559 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz': discarded 11 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz': discarded 103631 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz': discarded 2817 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz': discarded 26925 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz': discarded 188 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz': discarded 522524 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz': discarded 6689 reads containing non-ACGT characters
+Loaded 1940272918 k-mer
+Minimum k-mer coverage is 418
+Using a coverage threshold of 4...
+The median k-mer coverage is 18
+The reconstruction is 971862032
+The k-mer coverage threshold is 4.24264
+Setting parameter e (erode) to 4
+Setting parameter E (erodeStrand) to 1
+Setting parameter c (coverage) to 4.24264
+Generating adjacency
+Added 4110525703 edges.
+Eroding tips
+Eroded 367767134 tips.
+Eroded 0 tips.
+Pruning tips shorter than 1 bp...
+Pruned 5073 k-mer in 5073 tips.
+Pruning tips shorter than 2 bp...
+Pruned 7884 k-mer in 4365 tips.
+Pruning tips shorter than 4 bp...
+Pruned 24980 k-mer in 8033 tips.
+Pruning tips shorter than 8 bp...
+Pruned 75169 k-mer in 13199 tips.
+Pruning tips shorter than 16 bp...
+Pruned 188084 k-mer in 18461 tips.
+Pruning tips shorter than 23 bp...
+Pruned 161716 k-mer in 10681 tips.
+Pruning tips shorter than 23 bp...
+Pruned 180 k-mer in 12 tips.
+Pruning tips shorter than 23 bp...
+Pruned 59824 tips in 7 rounds.
+Marked 392922704 edges of 172377236 ambiguous vertices.
+Removing low-coverage contigs (mean k-mer coverage < 4.24264)
+Found 1571989244 k-mer in 174128132 contigs before removing low-coverage contigs.
+Removed 638148284 k-mer in 49806848 low-coverage contigs.
+Split 99550888 ambigiuous branches.
+Eroding tips
+Eroded 2494724 tips.
+Eroded 0 tips.
+Pruning tips shorter than 1 bp...
+Pruned 203545 k-mer in 203545 tips.
+Pruning tips shorter than 2 bp...
+Pruned 210990 k-mer in 130535 tips.
+Pruning tips shorter than 4 bp...
+Pruned 459791 k-mer in 162764 tips.
+Pruning tips shorter than 8 bp...
+Pruned 1062382 k-mer in 192903 tips.
+Pruning tips shorter than 16 bp...
+Pruned 2593610 k-mer in 232553 tips.
+Pruning tips shorter than 23 bp...
+Pruned 2202664 k-mer in 118644 tips.
+Pruning tips shorter than 23 bp...
+Pruned 1395 k-mer in 132 tips.
+Pruning tips shorter than 23 bp...
+Pruned 1041076 tips in 7 rounds.
+Popping bubbles
+Removed 1843300 bubbles.
+Removed 1843300 bubbles
+Marked 156168271 edges of 68114851 ambiguous vertices.
+Left 57203 unassembled k-mer in circular contigs.
+Assembled 873673491 k-mer in 64898210 contigs.
+Removed 1015607605 k-mer.
+The signal-to-noise ratio (SNR) is -0.407414 dB.
+AdjList  -k23 -m50 /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.fa >/home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.adj
+abyss-filtergraph  -k23 -g /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-2.adj /home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.adj >/home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-1.path
+/bin/bash: abyss-filtergraph: command not found
+make: *** [/home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi-2.adj] Error 127
