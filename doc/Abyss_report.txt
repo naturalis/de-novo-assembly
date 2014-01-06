@@ -1,0 +1,172 @@
+[assembly@DT004141 abyss-1.3.6]$ abyss-pe k=25 n=10 in='/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz' name=ABySS_Output
+ABYSS -k25 -q3  --coverage-hist=coverage.hist -s ABySS_Output-bubbles.fa  -o ABySS_Output-1.fa /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz 
+ABySS 1.3.6
+ABYSS -k25 -q3 --coverage-hist=coverage.hist -s ABySS_Output-bubbles.fa -o ABySS_Output-1.fa /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz': discarded 3567 reads shorter than 25 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz': discarded 34 reads containing non-ACGT characters
+Reading `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz'...
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz': discarded 225813 reads shorter than 25 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz': discarded 3561 reads containing non-ACGT characters
+Loaded 616350476 k-mer
+Minimum k-mer coverage is 186
+Using a coverage threshold of 2...
+The median k-mer coverage is 3
+The reconstruction is 365501888
+The k-mer coverage threshold is 1.73205
+Setting parameter e (erode) to 2
+Setting parameter E (erodeStrand) to 0
+Setting parameter c (coverage) to 2
+Generating adjacency
+Added 1263412712 edges.
+Eroding tips
+Eroded 138787709 tips.
+Eroded 0 tips.
+Pruning tips shorter than 1 bp...
+Pruned 50333 k-mer in 50333 tips.
+Pruning tips shorter than 2 bp...
+Pruned 83430 k-mer in 43909 tips.
+Pruning tips shorter than 4 bp...
+Pruned 266645 k-mer in 80327 tips.
+Pruning tips shorter than 8 bp...
+Pruned 857142 k-mer in 140422 tips.
+Pruning tips shorter than 16 bp...
+Pruned 2533451 k-mer in 221661 tips.
+Pruning tips shorter than 25 bp...
+Pruned 3197930 k-mer in 173249 tips.
+Pruning tips shorter than 25 bp...
+Pruned 1640 k-mer in 199 tips.
+Pruning tips shorter than 25 bp...
+Pruned 710100 tips in 7 rounds.
+Marked 57378514 edges of 25258646 ambiguous vertices.
+Removing low-coverage contigs (mean k-mer coverage < 2)
+Found 470557404 k-mer in 26518223 contigs before removing low-coverage contigs.
+Removed 142176509 k-mer in 5980378 low-coverage contigs.
+Split 11694208 ambigiuous branches.
+Eroding tips
+Eroded 467217 tips.
+Eroded 0 tips.
+Pruning tips shorter than 1 bp...
+Pruned 145343 k-mer in 145343 tips.
+Pruning tips shorter than 2 bp...
+Pruned 171085 k-mer in 109488 tips.
+Pruning tips shorter than 4 bp...
+Pruned 361618 k-mer in 137886 tips.
+Pruning tips shorter than 8 bp...
+Pruned 796471 k-mer in 167674 tips.
+Pruning tips shorter than 16 bp...
+Pruned 1697959 k-mer in 185506 tips.
+Pruning tips shorter than 25 bp...
+Pruned 2019726 k-mer in 126013 tips.
+Pruning tips shorter than 25 bp...
+Pruned 6128 k-mer in 598 tips.
+Pruning tips shorter than 25 bp...
+Pruned 20 k-mer in 1 tips.
+Pruning tips shorter than 25 bp...
+Pruned 872509 tips in 8 rounds.
+Popping bubbles
+Removed 138273 bubbles.
+Removed 138273 bubbles
+Marked 29187581 edges of 12701536 ambiguous vertices.
+Left 25315 unassembled k-mer in circular contigs.
+Assembled 318617322 k-mer in 13440600 contigs.
+Removed 293620356 k-mer.
+The signal-to-noise ratio (SNR) is 0.410533 dB.
+AdjList  -k25 -m50 ABySS_Output-1.fa >ABySS_Output-1.adj
+abyss-filtergraph  -k25 -g ABySS_Output-2.adj ABySS_Output-1.adj >ABySS_Output-1.path
+PopBubbles  -j2 -k25 -p0.9  -g ABySS_Output-3.adj ABySS_Output-1.fa ABySS_Output-2.adj >ABySS_Output-2.path
+MergeContigs  -k25 -o ABySS_Output-3.fa ABySS_Output-1.fa ABySS_Output-2.adj ABySS_Output-2.path
+The minimum coverage of single-end contigs is 2.
+The minimum coverage of merged contigs is 2.
+awk '!/^>/ {x[">" $1]=1; next} {getline s} $1 in x {print $0 "\n" s}' \
+		ABySS_Output-2.path ABySS_Output-1.fa >ABySS_Output-indel.fa
+ln -sf ABySS_Output-3.fa ABySS_Output-unitigs.fa
+abyss-map  -j2 -l25   /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz ABySS_Output-3.fa \
+		|abyss-fixmate  -l25  -h ABySS_Output-3.hist \
+		|sort -snk3 -k4 \
+		|DistanceEst  -j2 -k25 -l25 -s200 -n10   -o ABySS_Output-3.dist ABySS_Output-3.hist
+Building the suffix array...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Mateless          0
+Unaligned    287973  1.85%
+Singleton   1005292  6.45%
+FR          2718545  17.4%
+RF              217  0.00139%
+FF             5027  0.0322%
+Different  11576584  74.2%
+Total      15593638
+Overlap   -k25 -g ABySS_Output-4.adj -o ABySS_Output-4.fa ABySS_Output-3.fa ABySS_Output-3.adj ABySS_Output-3.dist
+Overlap: 8
+Scaffold: 8
+No overlap: 4
+Insignificant (<5bp): 4
+Homopolymer: 0
+Motif: 0
+Ambiguous: 0
+SimpleGraph    -j2 -k25 -o ABySS_Output-4.path1 ABySS_Output-4.adj ABySS_Output-3.dist
+Total paths attempted: 4225
+Unique path: 2472
+No possible paths: 95
+No valid paths: 0
+Repetitive: 0
+Multiple valid paths: 1517
+Too many solutions: 0
+Too complex: 141
+
+The minimum number of pairs in a distance estimate is 10.
+The minimum number of pairs used in a path is 10.
+MergePaths   -j2 -k25 -o ABySS_Output-4.path2 ABySS_Output-4.adj ABySS_Output-4.path1
+PathOverlap --assemble  -k25 ABySS_Output-4.adj ABySS_Output-4.path2 >ABySS_Output-4.path3
+cat ABySS_Output-3.fa ABySS_Output-4.fa \
+		|PathConsensus  -k25 -p0.9 -o ABySS_Output-5.path -s ABySS_Output-5.fa -g ABySS_Output-5.adj - ABySS_Output-4.adj ABySS_Output-4.path3
+Ambiguous paths: 1163
+Merged:          343
+No paths:        0
+Too many paths:  294
+Too complex:     17
+Dissimilar:      509
+cat ABySS_Output-3.fa ABySS_Output-4.fa ABySS_Output-5.fa |MergeContigs  -k25 -o ABySS_Output-6.fa - ABySS_Output-5.adj ABySS_Output-5.path
+The minimum coverage of single-end contigs is 2.
+The minimum coverage of merged contigs is 2.
+ln -sf ABySS_Output-6.fa ABySS_Output-contigs.fa
+PathOverlap --overlap  --dot -k25 ABySS_Output-5.adj ABySS_Output-5.path >ABySS_Output-6.dot
+ln -sf ABySS_Output-6.dot ABySS_Output-contigs.dot
+abyss-map  -j2 -l25   /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz /home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz ABySS_Output-6.fa \
+		|abyss-fixmate  -l25  -h ABySS_Output-6.hist \
+		|sort -snk3 -k4 \
+		|DistanceEst --dot  -j2 -k25 -l25 -s200 -n10   -o ABySS_Output-6.dist.dot ABySS_Output-6.hist
+Building the suffix array...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Mateless          0
+Unaligned    287975  1.85%
+Singleton   1005301  6.45%
+FR          2766622  17.7%
+RF              249  0.0016%
+FF             5046  0.0324%
+Different  11528445  73.9%
+Total      15593638
+abyss-scaffold  -k25 -s200 -n10 -g ABySS_Output-6.path.dot  ABySS_Output-6.dot ABySS_Output-6.dist.dot >ABySS_Output-6.path
+n	n:200	n:N50	min	N80	N50	N20	max	sum
+9997001	305455	100726	200	249	347	552	21555	106.4e6
+PathConsensus  -k25 -p0.9 -s ABySS_Output-7.fa -g ABySS_Output-7.adj -o ABySS_Output-7.path ABySS_Output-6.fa ABySS_Output-6.dot ABySS_Output-6.path
+Ambiguous paths: 96
+Merged:          37
+No paths:        4
+Too many paths:  11
+Too complex:     26
+Dissimilar:      18
+cat ABySS_Output-6.fa ABySS_Output-7.fa \
+		|MergeContigs  -k25 -o ABySS_Output-8.fa - ABySS_Output-7.adj ABySS_Output-7.path
+The minimum coverage of single-end contigs is 2.
+The minimum coverage of merged contigs is 2.
+ln -sf ABySS_Output-8.fa ABySS_Output-scaffolds.fa
+PathOverlap --overlap  --dot -k25 ABySS_Output-7.adj ABySS_Output-7.path >ABySS_Output-8.dot
+ln -sf ABySS_Output-8.dot ABySS_Output-scaffolds.dot
+abyss-fac  ABySS_Output-unitigs.fa ABySS_Output-contigs.fa ABySS_Output-scaffolds.fa |tee ABySS_Output-stats
+n	n:500	n:N50	min	N80	N50	N20	max	sum
+10e6	34496	12009	500	553	681	1110	15467	25.74e6	ABySS_Output-unitigs.fa
+9997143	34706	11781	500	554	688	1170	21555	26.31e6	ABySS_Output-contigs.fa
+9996915	34691	11743	500	554	689	1181	21555	26.35e6	ABySS_Output-scaffolds.fa
+
