@@ -43,11 +43,20 @@ NAME=$RESULTS/$SPECIES
 # set to same as SOAPdenovo
 N=3
 
-# grow the list of paired ends
-PAIRLIST=""
+# 'lib' is the magic environment variable 
+# that abyss-pe looks for, whose value
+# is a list of unique names for paired ends. For example:
+# lib="pair1 pair2 pair3"
+export lib="$PAIRS"
 for PAIR in $PAIRS; do
-        PAIRLIST="$PAIRLIST $PAIR='${!PAIR}'"
+
+	# each of these are a unique name whose value
+	# is a pair of files. For example:
+	# pair1="foo.R1.fastq foo.R2.fastq"
+	export $PAIR="${!PAIR}"
 done
 
-/usr/bin/time --verbose abyss-pe k=$K n=$N lib="$PAIRS" $PAIRLIST name=$NAME > $LOG 2> $ERR
+# calculate number of jobs
+JOBS=`echo $PAIRS | wc -w`
 
+/usr/bin/time --verbose abyss-pe -j$JOBS k=$K n=$N name=$NAME > $LOG 2> $ERR
