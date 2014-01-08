@@ -2,3 +2,7 @@
 `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-07_CAGATC_L001_R1.fastq.gz': discarded 3 reads containing non-ACGT characters
 `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-07_CAGATC_L001_R2.fastq.gz': discarded 44564 reads shorter than 23 bases
 `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-07_CAGATC_L001_R2.fastq.gz': discarded 4201 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-07_CAGATC_L002_R1.fastq.gz': discarded 2994 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-07_CAGATC_L002_R1.fastq.gz': discarded 3 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-07_CAGATC_L002_R2.fastq.gz': discarded 39290 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-07_CAGATC_L002_R2.fastq.gz': discarded 1578 reads containing non-ACGT characters
