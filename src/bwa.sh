@@ -64,30 +64,30 @@ for PAIR in $PAIRS; do
 	# lists of produced files
 	SAIS=""
 
-	# iterate over FASTQ files
-	for FASTQ in $FASTQS; do
-
-		# create new names
-		LOCALFASTA=`echo $REFERENCE | sed -e 's/.*\///'`
-		LOCALFASTQ=`echo $FASTQ | sed -e 's/.*\///'`
-		OUTFILE=$RESULTS/$LOCALFASTQ-$LOCALFASTA.sai
-		SAIS="$SAIS $OUTFILE"
-
-		# note: we don't do basic QC here, because that might mean
-		# that the mate pairs in the FASTQ files go out of order,
-		# which will result in the bwa sampe step taking an inordinate
-		# amount of time
-
-		# do bwa aln if needed
-		if [ ! -e $OUTFILE ]; then
-			echo "going to align $FASTQ against $REFERENCE" >> $LOG
-
-			# use $CORES threads
-			bwa aln -t $CORES $REFERENCE $FASTQ > $OUTFILE 2>> $ERR
-		else
-			echo "alignment $OUTFILE already created" >> $LOG
-		fi
-	done
+#	# iterate over FASTQ files
+#	for FASTQ in $FASTQS; do
+#
+#		# create new names
+#		LOCALFASTA=`echo $REFERENCE | sed -e 's/.*\///'`
+#		LOCALFASTQ=`echo $FASTQ | sed -e 's/.*\///'`
+#		OUTFILE=$RESULTS/$LOCALFASTQ-$LOCALFASTA.sai
+#		SAIS="$SAIS $OUTFILE"
+#
+#		# note: we don't do basic QC here, because that might mean
+#		# that the mate pairs in the FASTQ files go out of order,
+#		# which will result in the bwa sampe step taking an inordinate
+#		# amount of time
+#
+#		# do bwa aln if needed
+#		if [ ! -e $OUTFILE ]; then
+#			echo "going to align $FASTQ against $REFERENCE" >> $LOG
+#
+#			# use $CORES threads
+#			bwa aln -t $CORES $REFERENCE $FASTQ > $OUTFILE 2>> $ERR
+#		else
+#			echo "alignment $OUTFILE already created" >> $LOG
+#		fi
+#	done
 
         # name of the resulting SAM file for this pair
         SAM=$RESULTS/$SPECIES-$PAIR.sam
@@ -96,8 +96,9 @@ for PAIR in $PAIRS; do
 	if [ ! -e $SAM ]; then
 
 		# create paired-end SAM file
-		echo "going to run bwa sampe $REFERENCE $SAIS $FASTQS > $SAM" >> $LOG
-		bwa sampe $REFERENCE $SAIS $FASTQS > $SAM 2>> $ERR
+		echo "going to run bwa mem -t $CORES $REFERENCE $FASTQS > $SAM" >> $LOG
+		bwa mem -t $CORES $REFERENCE $FASTQS > $SAM 2>> $ERR
+#		bwa sampe $REFERENCE $SAIS $FASTQS > $SAM 2>> $ERR
 	else
 		echo "sam file $SAM already created" >> $LOG
 	fi		
