@@ -4,9 +4,9 @@ SPECIES=$1
 
 # verify command line argument
 if [ "$SPECIES" == "Rhagoletis_cerasi" ]; then
-        echo "going to assemble Rhagoletis cerasi"
+        echo "going to map Rhagoletis cerasi"
 elif [ "$SPECIES" == "Gonioctena_quinquepunctata" ]; then
-        echo "going to assemble Gonioctena quinquepunctata"
+        echo "going to map Gonioctena quinquepunctata"
 else 
         echo "Usage: $0 <Rhagoletis_cerasi or Gonioctena_quinquepunctata>"
         exit
