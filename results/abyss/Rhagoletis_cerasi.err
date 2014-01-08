@@ -1,0 +1,308 @@
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz': discarded 2196 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R1.fastq.gz': discarded 12 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz': discarded 219955 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L001_R2.fastq.gz': discarded 3377 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz': discarded 2227 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R1.fastq.gz': discarded 4 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz': discarded 175864 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-02_TGACCA_L002_R2.fastq.gz': discarded 1283 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz': discarded 11828 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R1.fastq.gz': discarded 106 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz': discarded 616112 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-02_TGACCA_L004_R2.fastq.gz': discarded 3627 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz': discarded 2478 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R1.fastq.gz': discarded 7 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz': discarded 63830 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L001_R2.fastq.gz': discarded 3205 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz': discarded 2502 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R1.fastq.gz': discarded 9 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz': discarded 57200 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-03_ACAGTG_L002_R2.fastq.gz': discarded 1224 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz': discarded 13208 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R1.fastq.gz': discarded 100 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz': discarded 430500 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-03_ACAGTG_L004_R2.fastq.gz': discarded 4084 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz': discarded 5302 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R1.fastq.gz': discarded 5 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz': discarded 116284 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L001_R2.fastq.gz': discarded 6877 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz': discarded 5559 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R1.fastq.gz': discarded 11 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz': discarded 103631 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-06_GCCAAT_L002_R2.fastq.gz': discarded 2817 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz': discarded 26925 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R1.fastq.gz': discarded 188 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz': discarded 522524 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-06_GCCAAT_L004_R2.fastq.gz': discarded 6689 reads containing non-ACGT characters
+The minimum coverage of single-end contigs is 2.9.
+The minimum coverage of merged contigs is 4.24324.
+Consider increasing the coverage threshold parameter, c, to 4.24324.
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Building the Burrows-Wheeler transform...
+Building the Burrows-Wheeler transform...
+Building the Burrows-Wheeler transform...
+Building the Burrows-Wheeler transform...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Building the character occurrence table...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Building the character occurrence table...
+Building the character occurrence table...
+Building the character occurrence table...
+Mateless          0
+Unaligned     17833  0.126%
+Singleton     65481  0.461%
+FR          2610859  18.4%
+RF               30  0.000211%
+FF            11641  0.082%
+Different  11488163  80.9%
+Total      14194007
+Mateless          0
+Unaligned     18269  0.124%
+Singleton     72601  0.493%
+FR          2662865  18.1%
+RF               44  0.000299%
+FF            11753  0.0799%
+Different  11947300  81.2%
+Total      14712832
+Mateless          0
+Unaligned     68826  0.456%
+Singleton    112008  0.741%
+FR          1785123  11.8%
+RF               27  0.000179%
+FF             3663  0.0242%
+Different  13138607  87%
+Total      15108254
+Mateless          0
+Unaligned     70429  0.452%
+Singleton    135632  0.87%
+FR          1813113  11.6%
+RF               27  0.000173%
+FF             3904  0.025%
+Different  13570533  87%
+Total      15593638
+Mateless          0
+Unaligned     25131  0.082%
+Singleton     85726  0.28%
+FR          6514819  21.3%
+RF              113  0.000369%
+FF             4166  0.0136%
+Different  24001423  78.4%
+Total      30631378
+Mateless          0
+Unaligned     26054  0.0831%
+Singleton    100365  0.32%
+FR          6538871  20.9%
+RF              114  0.000364%
+FF             4895  0.0156%
+Different  24682005  78.7%
+Total      31352304
+Mateless          0
+Unaligned    188156  0.485%
+Singleton    465453  1.2%
+FR          4113720  10.6%
+RF               96  0.000247%
+FF             5959  0.0154%
+Different  34019268  87.7%
+Total      38792652
+Mateless          0
+Unaligned    196744  0.535%
+Singleton    442284  1.2%
+FR          6056448  16.5%
+RF               82  0.000223%
+FF            18132  0.0493%
+Different  30076517  81.8%
+Total      36790207
+Mateless          0
+Unaligned     95793  0.136%
+Singleton    412478  0.585%
+FR         13893369  19.7%
+RF              242  0.000343%
+FF             4009  0.00569%
+Different  56083774  79.6%
+Total      70489665
+Ambiguous paths: 89502
+Merged:          33371
+No paths:        0
+Too many paths:  11155
+Too complex:     6806
+Dissimilar:      38170
+warning: the head of 40838917+ does not match the tail of the previous contig
+GCTGATGACGCTGATGaATGGA
+CGCTGATGACGCTGATGATGGA
+906577+ 65283786+ 40838917+
+warning: the head of 19900605+ does not match the tail of the previous contig
+GAACCAACCGAACCAAMcGAMC
+CGAACCAACCGAACCAAAGACC
+23565440- 65293730+ 19900605+ 23412148-
+warning: the head of 33695901+ does not match the tail of the previous contig
+CTGACTTGCTGACTWGCTGaST
+GCTGACTTGCTGACTAGCTGGT
+53140766+ 65306547+ 33695901+
+warning: the head of 65306960+ does not match the tail of the previous contig
+CTGGCGCGTCGCATCGCATCGC
+CgYGKCGCRTCGCATCGCATCG
+54090278+ 65306960+ 49404168+ 37N 10884135+
+warning: the head of 65315771+ does not match the tail of the previous contig
+TCTGCTCTTCTCTGCTCTGCTC
+cTCTKCTCTKCTCTGCTCTGCT
+58281091- 33459329+ 39N 65064826+ 65315771+ 63945991+ 15951834-
+warning: the head of 64981447+ does not match the tail of the previous contig
+CAGCTGCAGCTGCWGCTGcTGc
+TGCAGCTGCAGCTGCTGCTGTG
+65036573- 11796889+ 65288458+ 64981447+
+The minimum coverage of single-end contigs is 2.9.
+The minimum coverage of merged contigs is 3.25.
+Consider increasing the coverage threshold parameter, c, to 3.25.
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the suffix array...
+Building the Burrows-Wheeler transform...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Building the Burrows-Wheeler transform...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Building the character occurrence table...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Building the Burrows-Wheeler transform...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Building the Burrows-Wheeler transform...
+Building the character occurrence table...
+Building the character occurrence table...
+Building the character occurrence table...
+Mateless          0
+Unaligned     18287  0.124%
+Singleton     72755  0.495%
+FR          3019701  20.5%
+RF               84  0.000571%
+FF            12181  0.0828%
+Different  11589824  78.8%
+Total      14712832
+Mateless          0
+Unaligned     68834  0.456%
+Singleton    112168  0.742%
+FR          2102878  13.9%
+RF               49  0.000324%
+FF             3810  0.0252%
+Different  12820515  84.9%
+Total      15108254
+Mateless          0
+Unaligned     17842  0.126%
+Singleton     65690  0.463%
+FR          2950577  20.8%
+RF               64  0.000451%
+FF            12093  0.0852%
+Different  11147741  78.5%
+Total      14194007
+Mateless          0
+Unaligned     70446  0.452%
+Singleton    135747  0.871%
+FR          2145574  13.8%
+RF               64  0.00041%
+FF             4073  0.0261%
+Different  13237734  84.9%
+Total      15593638
+Mateless          0
+Unaligned     25142  0.0821%
+Singleton     85904  0.28%
+FR          7263009  23.7%
+RF              186  0.000607%
+FF             4498  0.0147%
+Different  23252639  75.9%
+Total      30631378
+Mateless          0
+Unaligned     26066  0.0831%
+Singleton    100513  0.321%
+FR          7322333  23.4%
+RF              200  0.000638%
+FF             5225  0.0167%
+Different  23897967  76.2%
+Total      31352304
+Mateless          0
+Unaligned    196802  0.535%
+Singleton    443024  1.2%
+FR          6781110  18.4%
+RF              181  0.000492%
+FF            19044  0.0518%
+Different  29350046  79.8%
+Total      36790207
+Mateless          0
+Unaligned    188201  0.485%
+Singleton    466108  1.2%
+FR          4851495  12.5%
+RF              187  0.000482%
+FF             6316  0.0163%
+Different  33280345  85.8%
+Total      38792652
+Mateless          0
+Unaligned     95843  0.136%
+Singleton    413331  0.586%
+FR         15547581  22.1%
+RF              434  0.000616%
+FF             4560  0.00647%
+Different  54427916  77.2%
+Total      70489665
+n	n:200	n:N50	min	N80	N50	N20	max	sum
+46.35e6	282201	54871	200	392	810	2071	60761	181.5e6
+Ambiguous paths: 63339
+Merged:          4073
+No paths:        4354
+Too many paths:  1120
+Too complex:     52385
+Dissimilar:      1407
+warning: the head of 65220233+ does not match the tail of the previous contig
+CAGCAGCAGSMRCAgRCASMAS
+GCAGCAGCAGGCACAACAGCAG
+31619573- 65336338+ 65220233+
+The minimum coverage of single-end contigs is 2.9.
+The minimum coverage of merged contigs is 4.25.
+Consider increasing the coverage threshold parameter, c, to 4.25.
+	Command being timed: "abyss-pe -j9 k=23 n=3 name=/home/assembly/de-novo-assembly/results/abyss/Rhagoletis_cerasi"
+	User time (seconds): 507131.15
+	System time (seconds): 43722.63
+	Percent of CPU this job got: 351%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 43:35:20
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 216562304
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 68028511
+	Minor (reclaiming a frame) page faults: 298974131
+	Voluntary context switches: 873926861
+	Involuntary context switches: 606064359
+	Swaps: 0
+	File system inputs: 3472597784
+	File system outputs: 340197320
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
