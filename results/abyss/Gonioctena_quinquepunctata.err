@@ -6,3 +6,13 @@
 `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-07_CAGATC_L002_R1.fastq.gz': discarded 3 reads containing non-ACGT characters
 `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-07_CAGATC_L002_R2.fastq.gz': discarded 39290 reads shorter than 23 bases
 `/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-07_CAGATC_L002_R2.fastq.gz': discarded 1578 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-07_CAGATC_L004_R1.fastq.gz': discarded 10546 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-07_CAGATC_L004_R1.fastq.gz': discarded 99 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-07_CAGATC_L004_R2.fastq.gz': discarded 199005 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/D0TRBACXX_101851-07_CAGATC_L004_R2.fastq.gz': discarded 3448 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-10_CTTGTA_L001_R1.fastq.gz': discarded 2836 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-10_CTTGTA_L001_R1.fastq.gz': discarded 9 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-10_CTTGTA_L001_R2.fastq.gz': discarded 57010 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-10_CTTGTA_L001_R2.fastq.gz': discarded 4878 reads containing non-ACGT characters
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-10_CTTGTA_L002_R1.fastq.gz': discarded 2934 reads shorter than 23 bases
+`/home/assembly/data/schilthuizen/RawData/C0A7AACXX_101851-10_CTTGTA_L002_R1.fastq.gz': discarded 1 reads containing non-ACGT characters
