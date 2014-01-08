@@ -63,7 +63,6 @@ for PAIR in $PAIRS; do
 
 	# lists of produced files
 	SAIS=""
-	SAM=""
 
 	# iterate over FASTQ files
 	for FASTQ in $FASTQS; do
@@ -73,7 +72,6 @@ for PAIR in $PAIRS; do
 		LOCALFASTQ=`echo $FASTQ | sed -e 's/.*\///'`
 		OUTFILE=$RESULTS/$LOCALFASTQ-$LOCALFASTA.sai
 		SAIS="$SAIS $OUTFILE"
-		SAM=`echo $OUTFILE | sed -e "s/_R.*/-$LOCALFASTA.sam/"`
 
 		# note: we don't do basic QC here, because that might mean
 		# that the mate pairs in the FASTQ files go out of order,
@@ -91,11 +89,14 @@ for PAIR in $PAIRS; do
 		fi
 	done
 
+        # name of the resulting SAM file for this pair
+        SAM=$RESULTS/$SPECIES-$PAIR.sam
+
 	# do bwa sampe if needed
 	if [ ! -e $SAM ]; then
 
 		# create paired-end SAM file
-		echo "going to run bwa sampe $FASTA $SAIS $FASTQS > $SAM" >> $LOG
+		echo "going to run bwa sampe $REFERENCE $SAIS $FASTQS > $SAM" >> $LOG
 		bwa sampe $REFERENCE $SAIS $FASTQS > $SAM 2>> $ERR
 	else
 		echo "sam file $SAM already created" >> $LOG
