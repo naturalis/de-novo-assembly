@@ -55,39 +55,11 @@ BAMS=""
 
 # iterate over mate pairs
 for PAIR in $PAIRS; do
-	echo "going to process $PAIR"
+	echo "going to process $PAIR" >> $LOG
 
 	# list the FASTQ files in this pair. this should be
 	# two files (paired end)
 	FASTQS=${!PAIR}
-
-	# lists of produced files
-	SAIS=""
-
-#	# iterate over FASTQ files
-#	for FASTQ in $FASTQS; do
-#
-#		# create new names
-#		LOCALFASTA=`echo $REFERENCE | sed -e 's/.*\///'`
-#		LOCALFASTQ=`echo $FASTQ | sed -e 's/.*\///'`
-#		OUTFILE=$RESULTS/$LOCALFASTQ-$LOCALFASTA.sai
-#		SAIS="$SAIS $OUTFILE"
-#
-#		# note: we don't do basic QC here, because that might mean
-#		# that the mate pairs in the FASTQ files go out of order,
-#		# which will result in the bwa sampe step taking an inordinate
-#		# amount of time
-#
-#		# do bwa aln if needed
-#		if [ ! -e $OUTFILE ]; then
-#			echo "going to align $FASTQ against $REFERENCE" >> $LOG
-#
-#			# use $CORES threads
-#			bwa aln -t $CORES $REFERENCE $FASTQ > $OUTFILE 2>> $ERR
-#		else
-#			echo "alignment $OUTFILE already created" >> $LOG
-#		fi
-#	done
 
         # name of the resulting SAM file for this pair
         SAM=$RESULTS/$SPECIES-$PAIR.sam
@@ -98,7 +70,6 @@ for PAIR in $PAIRS; do
 		# create paired-end SAM file
 		echo "going to run bwa mem -t $CORES $REFERENCE $FASTQS > $SAM" >> $LOG
 		bwa mem -t $CORES $REFERENCE $FASTQS > $SAM 2>> $ERR
-#		bwa sampe $REFERENCE $SAIS $FASTQS > $SAM 2>> $ERR
 	else
 		echo "sam file $SAM already created" >> $LOG
 	fi		
@@ -111,7 +82,7 @@ for PAIR in $PAIRS; do
 		# XXX maybe increase -q?
 		echo "going to run samtools view -bS -F 4 -q 50 $SAM > $SAM.filtered" >> $LOG
 		samtools view -bS -F 4 -q 50 $SAM > $SAM.filtered 2>> $ERR
-		gzip -9 $SAM
+		gzip -9 $SAM &
 	else
 		echo "sam file $SAM.filtered already created" >> $LOG
 	fi
