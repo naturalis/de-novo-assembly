@@ -1,0 +1,26 @@
+Velvet
+
+Velvet is an assembler specially designed for datasets with short reads. 
+Mainly the roche 454 and the illumina sequencers are compatible for velvet. 
+Velvet has two tasks: to remove errors from the dataset, and then untangle repeated regions of the genome*. 
+How this works will be eplained:
+
+One of the tasks of velvet is to remove errors from the dataset. 
+This is done with with Tour Bus. Tour Bus is a method that removes errors without 
+disrupting connections within the graph as shown in figure 1,(ref velvet_poster-1) To do this the errors are removed when 
+the whole graph is finished. (This maybe why velvet takes such a long time for a assembly. 
+It first assembles with the errors and later revise itself to remove it errors. May seem to me as long lasting.)
+Tour Bus recognizes two types of errors: tips and bubbles. 
+These tips are made when low quality read ends don't overlap with anything. 
+Therefore QC of the reads should be high to create less tips. The bubbles are created when there is an error in 
+the middle of a long reads or two faulty reads are aligned to each other. 
+
+Velvet's initial pipeline works like this:
+1, Sequencing of the data
+2, Hashing
+3, Simplification of linear stretches
+4, Error removal
+
+*Velvet: algorithms for de novo short read assembly using de Bruijn graphs. D.R.
+Zerbino and E. Birney. Genome Research 18:821-829. 
+
