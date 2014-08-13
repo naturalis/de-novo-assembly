@@ -82,7 +82,7 @@ for PAIR in $PAIRS; do
 		# XXX maybe increase -q?
 		echo "going to run samtools view -bS -F 4 -q 50 $SAM > $SAM.filtered" >> $LOG
 		samtools view -bS -F 4 -q 50 $SAM > $SAM.filtered 2>> $ERR
-		gzip -9 $SAM &
+		rm $SAM # preserve drive space
 	else
 		echo "sam file $SAM.filtered already created" >> $LOG
 	fi
@@ -93,6 +93,7 @@ for PAIR in $PAIRS; do
 		# sorting is needed for indexing
 		echo "going to run samtools sort $SAM.filtered $SAM.sorted" >> $LOG
 		samtools sort $SAM.filtered $SAM.sorted 2>> $ERR
+		rm $SAM.filtered # preserve drive space
 	else
 		echo "sam file $SAM.sorted already created" >> $LOG
 	fi
